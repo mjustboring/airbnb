@@ -1,0 +1,60 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  background: #ECA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: min(90vw, 90vh);
+  aspect-ratio: 0.66;
+  background: #FFFAF8;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 1rem 0.2rem #0004;
+}
+
+.logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1.2rem;
+  margin-right: 0.2rem;
+}
+
+.logo-text {
+  color: #FF5A5F;
+  display: inline-block;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  box-shadow: 0 0 0.4rem 0.1rem lightgrey;
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  height: 45%;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  overflow-x: auto;
+  display: grid;
+  grid-auto-columns: 35%;
+  grid-auto-flow: column;
+  grid-gap: 0.5rem;
+  filter: drop-shadow(0 0 0.2rem #0004);
+}

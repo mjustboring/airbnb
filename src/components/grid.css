@@ -1,0 +1,44 @@
+.banner-grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  filter: drop-shadow(0 0 0.2rem #0006);
+}
+
+.col  {
+  width: 12%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  object-fit: none;
+  object-position: center center;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 2/3;
+  position: absolute;
+  background: lightgrey;
+  border-radius: 0.2rem;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide100 {
+  0% { top: -100%; }
+  100% { top: 100%; }
+}
+
+@keyframes slide80 {
+  0% { top: -150%; }
+  100% { top: 100%; }
+}
+
+@keyframes slide60 {
+  0% { top: -233.333333333334%; }
+  100% { top: 100%; }
+}
